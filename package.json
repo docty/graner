@@ -1,0 +1,29 @@
+{
+  "name": "@docty68/graner",
+  "version": "1.0.0",
+  "description": "A Graner Installer",
+  "main": "build/graner.bundle.js",
+  "scripts": {
+    "start": "node middleware/app.js",
+    "test": "node build/graner.bundle.js",
+    "compile": "tsc",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "docty <createdarko@gmail.com> (http://hhwgaming.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/docty/graner"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
