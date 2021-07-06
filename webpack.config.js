@@ -1,12 +1,14 @@
-const path = require('path');
-
+var path = require('path');
+//var nodeExternals = require('webpack-node-externals');
 module.exports = {
     mode: 'development',
     entry: {
         main: path.resolve(__dirname, './middleware/app.js') 
     },
+    // target: "node",
+    // externals: [nodeExternals()],
     output: {
-        filename: 'graner.bundle.js',
+        filename: 'graner.js',
         path: path.resolve(__dirname, 'build')
     },
     devtool: 'inline-source-map',

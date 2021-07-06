@@ -1,4 +1,7 @@
-middleware
+build
 node_modules
 src
 index.html
+tsconfig.json
+webpack.config.config.js
+webpack.native.config.js
