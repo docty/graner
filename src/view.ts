@@ -1,12 +1,10 @@
 import axios from 'axios';
+import { baseURL } from './constant';
 
 
 export const view = async (properties: IView) => {
-    const result =  await axios.get('http://127.0.0.1:1337');
+    const result =  await axios.get(baseURL);
     properties.response(result.data);
-}
-window['graner'] = {
-    'view': view
 }
 
 interface IView {

@@ -5,7 +5,7 @@
   "main": "middleware/app.js",
   "scripts": {
     "start": "node middleware/app.js",
-    "test": "node build/graner.js",
+    "test": "jest",
     "compile": "tsc",
     "build": "webpack"
   },
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
+    "@types/jest": "^26.0.24",
     "babel-loader": "^8.2.2",
     "jest": "^27.0.6",
     "webpack": "^5.42.1",
