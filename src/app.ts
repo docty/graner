@@ -2,10 +2,12 @@ import { view } from './view';
 import { create } from './create';
 import { update } from './update';
 import { deleteUser } from './delete';
+import { login } from './login';
 
 window['graner'] = {
     'create': create,
-    'view': view,
+    'view'  : view,
     'update': update,
-    'delete': deleteUser
+    'delete': deleteUser,
+    'login' : login
 }

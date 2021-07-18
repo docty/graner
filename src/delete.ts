@@ -1,17 +1,17 @@
 import axios from 'axios';
-import { deleteURL } from './constant';
+import { userURL } from './constant';
 
 
 export const deleteUser = async (properties: IDelete) => {
-    const result =  await axios.delete(deleteURL)
-    properties.success(result.data);
+    const result =  await axios.delete(`${userURL}/${properties.data.userId}`);
+    properties.response(result.data, null);
 }
 
 interface IDelete {
     data: IData;
-    success: (e:any) => void
+    response: (success:any, error:any) => void;
 }
 
 interface IData {
-    id: string;
+    userId: string;
 }

@@ -1,15 +1,15 @@
 import axios from 'axios';
-import { userURL } from './constant';
+import { loginURL } from './constant';
 
 
-export const create = async (properties:IView ) => {
+export const login = async (properties:IView ) => {
     const {data} = properties;
      
-    await axios.post(userURL, data).then(res => {
+    await axios.post(loginURL, data).then(res => {
         properties.response(res, null);
     }).catch(err => {
         properties.response(null, err);
-    });  
+    }); 
 }
 
 
@@ -20,6 +20,5 @@ interface IView {
 
 interface IData {
     email: string;
-    fullName: string;
     password: string;
 }
