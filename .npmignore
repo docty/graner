@@ -3,5 +3,6 @@ node_modules
 src
 index.html
 tsconfig.json
-webpack.config.config.js
+src
+webpack.config.js
 webpack.native.config.js

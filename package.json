@@ -1,6 +1,6 @@
 {
   "name": "@docty68/graner",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A Graner Installer",
   "main": "middleware/app.js",
   "scripts": {
